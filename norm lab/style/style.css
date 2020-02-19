@@ -179,9 +179,27 @@ footer i {
 }
 
 .preHeader i {
-    color: #ffd626;
-    font-size: 18px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #FFD626;
+    border: 2px solid #FFD626;
+    border-radius: 50%;
     margin-right: 5px;
+    font-size: 14px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+li.has-dropdown::after {
+    content: "\f0d7";
+    font-family: 'FontAwesome';
+    transition: 0.2s transform, 0.2s -webkit-transform;
+    position: absolute;
+    right: 5px;
+    font-size: 10px;
+    color: #004;
+    top: 15px;
 }
 
 footer a {
